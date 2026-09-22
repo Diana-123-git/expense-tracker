@@ -1,0 +1,109 @@
+/*LOGIN PAGE*/
+
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
+body{
+  background: #F1F5F9;
+  display: flex;
+  text-align: center;  
+  padding: 80px;
+  justify-content: center;
+
+
+   background-color: #0d47a1; /* Deep blue base */
+        background-image:
+            radial-gradient(circle at 20% 20%, rgba(255,255,255,0.15) 0%, transparent 40%),
+            radial-gradient(circle at 80% 30%, rgba(255,255,255,0.1) 0%, transparent 40%),
+            radial-gradient(circle at 50% 80%, rgba(255,255,255,0.12) 0%, transparent 40%),
+            linear-gradient(135deg, #1565c0, #0d47a1);
+        background-size: 200px 200px, 250px 250px, 300px 300px, cover;
+        background-repeat: repeat;
+    }
+
+
+.square{
+  background-color: #F1F5F9;
+  width:350px;
+  height:300px;
+  border-radius:8px;
+  padding: 0,auto;
+  border-color: grey;
+  font-family: Arial, sans-serif;
+  align-content:center ;
+  
+}
+
+
+.instruction{
+   font-family: Arial, sans-serif;
+   font-size: 12px;
+   color: #313131;
+}
+
+
+.button{
+  width: 300px;
+  height:100px;
+  color: white;
+  cursor: pointer;
+}
+
+ label {
+  display: block;  
+  margin-bottom: 0 px;
+  margin-right: px;
+  padding: 1px;
+}
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  input[type="date"] {
+    height: 40px;
+    width: 290px;
+    padding: 1px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+  gap: 30px;
+  border-radius: 8px;
+  border-color:2563EB;
+  cursor: pointer;
+  background-color: #2563EB;;
+  color:white;
+  width: 290px;
+  height: 40px;
+  border-width: 1px;
+  font-size: 15px;
+
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+
+#errorMessage {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+
+/*DASHNOARD PAGE*/

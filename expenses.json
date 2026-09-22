@@ -1,0 +1,76 @@
+{
+  "user": {
+    "id": "user_1234",
+    "name": "Taiwo YG",
+    "currency": "NGN"
+  },
+  "summary": {
+    "total_expenses": "₦3245.80",
+    "monthly_budget": "₦,1000,000.00"
+  },
+  "expenses": [
+    {
+      "id": "exp_001",
+      "date": "2026-09-01",
+      "category": "Housing",
+      "description": "Monthly Rent Payment",
+      "amount": "₦650,000.00",
+      "payment_method": "Bank Transfer",
+      "status": "Completed"
+    },
+    {
+      "id": "exp_002",
+      "date": "2026-09-02",
+      "category": "Groceries",
+      "description": "Whole Foods Market",
+      "amount": "₦184,000.00",
+      "payment_method": "Credit Card",
+      "status": "Completed"
+    },
+    {
+      "id": "exp_003",
+      "date": "2026-09-04",
+      "category": "Utilities",
+      "description": "Electric & Water Bill",
+      "amount": "₦100,000.00",
+      "payment_method": "Auto Debit",
+      "status": "Completed"
+    },
+    {
+      "id": "exp_004",
+      "date": "2026-09-05",
+      "category": "Entertainment",
+      "description": "Streaming Subscriptions",
+      "amount":"₦30,000.00",
+      "payment_method": "Credit Card",
+      "status": "Completed"
+    },
+    {
+      "id": "exp_007",
+      "date": "2026-09-10",
+      "category": "Shopping",
+      "description": "Electronics & Accessories",
+      "amount":"₦250,000.00",
+      "payment_method": "Credit Card",
+      "status": "Pending"
+    },
+    {
+      "id": "exp_007",
+      "date": "2026-09-12",
+      "category": "Skincare",
+      "description": "Moisturizer",
+      "amount": "₦12,000.00",
+      "payment_method": "Credit Card",
+      "status": "Completed"
+    },
+    {
+      "id": "exp_007",
+      "date": "2026-09-10",
+      "category": "Shopping",
+      "description": "Clothings",
+      "amount": "₦210,000.00",
+      "payment_method": "Credit Card",
+      "status": "Pending"
+    }
+  ]
+}

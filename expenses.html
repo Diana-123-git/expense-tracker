@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Reports</title>
+  <link rel="stylesheet" href="expenseStyle.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-dot"></span> </div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="expenses.html" class="active">Expenses</a>
+
+      </nav>
+      <div class="profile">
+        <div class="avatar">TY</div>
+        <div><strong id="userName">Taiwo YG</strong><small>Personal account</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">September 2026</p>
+          <h1>Reports</h1>
+          <p class="muted">Understand where your money is going this month.</p>
+        </div>
+        <!-- <button id="downloadBtn" class="btn">Export report</button> -->
+      </header>
+
+      <section class="cards">
+        <article class="card">
+          <span>Total expenses</span>
+          <strong id="totalExpenses">₦0</strong>
+          <small id="expenseCount">0 transactions</small>
+        </article>
+        <article class="card">
+          <span>Monthly budget</span>
+          <strong id="budget">₦0</strong>
+          <small id="budgetUsage">0% used</small>
+        </article>
+        <article class="card">
+          <span>Remaining budget</span>
+          <strong id="remaining">₦0</strong>
+          <small>Based on completed + pending expenses</small>
+        </article>
+        <article class="card">
+          <span>Average expense</span>
+          <strong id="average">₦0</strong>
+          <small>Across all listed expenses</small>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="panel large">
+          <div class="panel-head">
+            <div><h2>Spending by category</h2><p>Expense distribution for September</p></div>
+          </div>
+          <div class="chart-wrap donut-wrap"><canvas id="categoryChart"></canvas></div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-head">
+            <div><h2>Payment methods</h2><p>How expenses were paid</p></div>
+          </div>
+          <div class="chart-wrap"><canvas id="paymentChart"></canvas></div>
+        </article>
+
+        <article class="panel full">
+          <div class="panel-head">
+            <div><h2>Daily spending</h2><p>Expense activity throughout the month</p></div>
+          </div>
+          <div class="chart-wrap line-wrap"><canvas id="dailyChart"></canvas></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div><h2>Recent expenses</h2><p>Transactions included in this report</p></div>
+          <select id="statusFilter">
+            <option value="all">All statuses</option>
+            <option value="Completed">Completed</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Description</th><th>Category</th><th>Payment</th><th>Status</th><th class="amount">Amount</th></tr>
+            </thead>
+            <tbody id="expenseTable"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="expense.js"></script>
+</body>
+</html>

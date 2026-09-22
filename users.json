@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name":"T money",
+    "email":"taiwo@gmail.com",
+    "password":"bigsecret"
+  },
+
+  {
+    "id":2,
+    "email":"eri@gmail.com",
+    "password":"bigsecret"
+  },
+
+  {
+    "id":3,
+    "email":"gbenga@gmail.com",
+    "password":"password"
+  }
+]
